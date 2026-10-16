@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "test:spark": "ts-node --project tsconfig.server.json -r tsconfig-paths/register src/scripts/test-spark-api.ts",
     "test:mls": "ts-node --project tsconfig.server.json -r tsconfig-paths/register src/scripts/test-mls-api.ts",
